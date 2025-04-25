@@ -90,7 +90,7 @@ export default function AuthPage({ header, pageType }: authPageProps) {
     </Container>
   );
 }
-F;
+
 interface textFieldsType {
   name: string;
   type: string;
