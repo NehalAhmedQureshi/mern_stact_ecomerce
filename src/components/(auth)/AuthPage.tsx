@@ -23,12 +23,12 @@ const textFields = {
       type: "textfield",
     },
     // {label: 'Keep me signed if in' , name : 'known' , type : 'checkbox'}
-  ] as Field[],
+  ] as const,
 };
 
 interface authPageProps {
   header: string;
-  pageType: string;
+  pageType: keyof typeof textFields;
 }
 export default function AuthPage({ header, pageType }: authPageProps) {
   return (
@@ -63,7 +63,7 @@ export default function AuthPage({ header, pageType }: authPageProps) {
 
         {/* Text fields */}
         <Stack marginTop={5} gap={3}>
-          {textFields[pageType]?.map((data: textFieldsType, index: number) => (
+          {textFields[pageType]?.map((data, index) => (
             <TextField
               key={index}
               label={data?.label}
@@ -91,9 +91,3 @@ export default function AuthPage({ header, pageType }: authPageProps) {
   );
 }
 
-interface textFieldsType {
-  name: string;
-  type: string;
-  placeholder: string;
-  label: string;
-}
