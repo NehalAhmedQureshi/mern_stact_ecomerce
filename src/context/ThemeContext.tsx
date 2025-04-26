@@ -1,3 +1,4 @@
+'use client'
 import lightTheme from "@/lib/lightTheme";
 import darkTheme from "@/lib/darktheme";
 import { createTheme, ThemeProvider } from "@mui/material";
