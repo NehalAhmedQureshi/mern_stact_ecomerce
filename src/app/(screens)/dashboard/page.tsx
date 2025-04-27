@@ -16,7 +16,7 @@ export default function page() {
       {/* cards */}
       <Grid container mt={3}>
         {/* card 1 */}
-        <Grid size={{ xs: 6, md: 4, lg: 3 }}>
+        <Grid size={{ xs: 6, md: 3 }} spacing={2}>
           <StatsCard
             title={"Total Revenue"}
             revenue={1024}
@@ -25,7 +25,7 @@ export default function page() {
           />
         </Grid>
         {/* card 2 */}
-        <Grid size={{ xs: 6, md: 4, lg: 3 }}>
+        <Grid size={{ xs: 6, md: 3 }}>
           <StatsCard
             title={"Total Revenue"}
             revenue={1024}
@@ -34,7 +34,7 @@ export default function page() {
           />
         </Grid>
         {/* card 3 */}
-        <Grid size={{ xs: 6, md: 4, lg: 3 }}>
+        <Grid size={{ xs: 6, md: 3 }}>
           <StatsCard
             title={"Total Revenue"}
             revenue={1024}
@@ -43,7 +43,7 @@ export default function page() {
           />
         </Grid>
         {/* card 4 */}
-        <Grid size={{ xs: 6, md: 4, lg: 3 }}>
+        <Grid size={{ xs: 6, md: 4 }}>
           <StatsCard
             title={"Total Revenue"}
             revenue={1024}
